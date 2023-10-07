@@ -1,0 +1,68 @@
+[
+  {
+    "id": "1",
+    "name": "Baby Rattle Toy",
+    "image": "https://i.ibb.co/Mg0n6JS/bby1.jpg",
+    "price": "$9.99",
+    "description": "Rattles can be made of wood, plastic, or cloth. Many of the rattles are brightly colored, have animal or flower shapes, and typically make sounds when shaken. These sounds can range from the dull sounds typical of wooden rattles to the jingling or bell type sounds that metal rattles make.",
+    "button": {
+      "text": "Views Details",
+      "link": "https://example.com/cart/add?product=1"
+    }
+  },
+  {
+    "id": "2",
+    "name": "Baby Bath Tub",
+    "image": "https://i.ibb.co/1f3ykFD/bby2.jpg",
+    "price": "$34.99",
+    "description": "Baby bathtubs give parents a safe way to wash a wet, slippery baby. The angle of the tub helps free a parent's hands for washing. Things to keep in mind when choosing an infant bathtub: A tub made of thick plastic will stay firm in the center, even under the weight of the water.",
+    "button": {
+      "text": "Views Details",
+      "link": "https://example.com/cart/add?product=2"
+    }
+  },
+  {
+    "id": "3",
+    "name": "feeding the baby",
+    "image": "https://i.ibb.co/QcdDDMH/bby3.jpg",
+    "price": "$12.99",
+    "description": "As your baby grows, they'll eat less often but consume more milk or formula each time. Babies take the same amount of volume in 24 hours from 4 weeks of age until 6 months of age. At 6 months of age, solids are added as well. Babies six to eight months old typically eat two to three meals (of solid foods) per day.",
+    "button": {
+      "text": "Views Details",
+      "link": "https://example.com/cart/add?product=3"
+    }
+  },
+  {
+    "id": "4",
+    "name": "Baby Socks Pack",
+    "image": "https://i.ibb.co/QmQGcXn/bby4.jpg",
+    "price": "$7.99",
+    "description": "A sock is a piece of clothing worn on the feet and often covering the ankle or some part of the calf. Some types of shoes or boots are typically worn over socks. In ancient times, socks were made from leather or matted animal hair. In the late 16th century, machine-knit socks were first produced.",
+    "button": {
+      "text": "Views Details",
+      "link": "https://example.com/cart/add?product=4"
+    }
+  },
+  {
+    "id": "5",
+    "name": "Baby Diaper Bag Backpack",
+    "image": "https://i.ibb.co/NLJLrX0/bby5.jpg",
+    "price": "$49.99",
+    "description": "Backpack diaper bags were made in water-resistant and tear-resistant fabric, looking nice and durable. This would make a nice shower gift. Baby backpack's material is skin-friendly, soft, has good breathability, and is not easily deformed.",
+    "button": {
+      "text": "Views Details",
+      "link": "https://example.com/cart/add?product=5"
+    }
+  },
+  {
+    "id": "6",
+    "name": "Baby Teething Toys Set",
+    "image": "https://i.ibb.co/54X7RBh/bby6.jpg",
+    "price": "$15.99",
+    "description": "Teething toys are safe pain relievers for babies when their teeth begin to develop. Teething babies have the urge to put pressure on the gums where the tooth is emerging from. Chewing on a teething toy soothes sore gums. Remember to buy a teether made of soft silicone, rubber, or wood.",
+    "button": {
+      "text": "Views Details",
+      "link": "https://example.com/cart/add?product=6"
+    }
+  }
+]
