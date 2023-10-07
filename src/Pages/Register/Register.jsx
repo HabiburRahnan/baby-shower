@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 const Register = () => {
+  const handleRegister = (e) => {};
   return (
     <div>
       <div>
@@ -56,13 +57,13 @@ const Register = () => {
             />
             <label className="label">
               <a href="#" className="label-text-alt link link-hover">
-                Forgot password?
+                Forgot password ?
               </a>
             </label>
           </div>
           <div className="form-control mt-6">
             <button type="submit" className="btn btn-primary">
-              Register 
+              Register
             </button>
           </div>
         </form>
