@@ -12,6 +12,8 @@ import { ThemeProvider } from "@material-tailwind/react";
 import Register from "./Pages/Register/Register";
 import ViewsDetails from "./Pages/ViewsDetails/ViewsDetails";
 import ErrorPage from "./Pages/Errorpage/ErrorPage";
+import AuthProvider from "./Provider/AuthProvider";
+import PrivetRoute from "./Provider/PrivetRoute";
 
 const router = createBrowserRouter([
   {
@@ -26,11 +28,19 @@ const router = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <About></About>,
+        element: (
+          <PrivetRoute>
+            <About></About>
+          </PrivetRoute>
+        ),
       },
       {
         path: "/service",
-        element: <Services></Services>,
+        element: (
+          <PrivetRoute>
+            <Services></Services>
+          </PrivetRoute>
+        ),
         loader: () => fetch(`/public/baby-shower.json`),
       },
       {
@@ -57,7 +67,9 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ThemeProvider>
-      <RouterProvider router={router} />
+      <AuthProvider>
+        <RouterProvider router={router} />
+      </AuthProvider>
     </ThemeProvider>
   </React.StrictMode>
 );
