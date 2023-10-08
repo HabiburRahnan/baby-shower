@@ -1,12 +1,12 @@
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { Link, useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const Register = () => {
   const { createUser } = useContext(AuthContext);
 
   const navigate = useNavigate();
-  console.log(location);
 
   const handleRegister = (e) => {
     e.preventDefault();
@@ -19,20 +19,22 @@ const Register = () => {
     console.log(name, photo, email, password);
 
     // create user
-
     createUser(email, password)
-      .then((result) => {
+      .then(() => {
         navigate(location?.state ? location.state : "/");
-        console.log(result.user);
+        Swal.fire("success register!", "thank you!", "success");
       })
-      .catch((error) => {
-        console.error(error);
+      .catch(() => {
+        Swal.fire("please provide right information!", "thank you!", "error");
       });
   };
+
   return (
-    <div>
-      <div>
-        <h2 className="text-3xl my-10 text-center">Please Register</h2>
+    <div className=" bg-gradient-to-r from-pink-400 via-purple-400 to-light-blue-400 rounded-2xl">
+      <div className="p-10">
+        <h2 className="text-3xl my-10 text-center text-white">
+          Please Register
+        </h2>
 
         <form
           onSubmit={handleRegister}
@@ -92,7 +94,7 @@ const Register = () => {
           </div>
           <div className="form-control mt-6">
             <button type="submit" className="btn btn-primary">
-              Login
+              Register
             </button>
           </div>
         </form>
@@ -106,4 +108,5 @@ const Register = () => {
     </div>
   );
 };
+
 export default Register;

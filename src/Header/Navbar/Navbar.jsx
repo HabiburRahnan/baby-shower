@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 
 const Navbar = () => {
-  const { user, logOut, photoURL } = useContext(AuthContext);
-  console.log(user);
+  const { user, logOut } = useContext(AuthContext);
   const handleSingOut = () => {
     logOut().then().catch();
   };
@@ -64,7 +63,7 @@ const Navbar = () => {
         {user ? (
           <>
             <p>{user.email}</p>
-            <img src={photoURL.photoURL} alt="" />
+            <img className="rounded-full w-12" src={user.photoURL} alt="" />
             <button onClick={handleSingOut} className="btn">
               Sing Out
             </button>

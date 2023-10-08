@@ -1,8 +1,8 @@
 const Contact = () => {
   return (
-    <div className=" text-3xl text-start font-medium gap-10 ">
-      <div className="my-14">
-        <table className="table w-1/2 border ">
+    <div className=" text-3xl text-start font-medium gap-10  ">
+      <div className="my-14 ">
+        <table className="table md:w-1/2 border ">
           <thead className="text-center text-2xl">
             <tr className="text-center text-light-blue-300">
               Personal contact
@@ -25,7 +25,7 @@ const Contact = () => {
         </table>
       </div>
 
-      <div className="my-14 flex justify-end">
+      <div className="my-14 flex justify-start md:justify-end">
         <table className="table w-1/2 border ">
           <thead>
             <tr className="text-center text-2xl">
