@@ -39,7 +39,7 @@ const Login = () => {
   };
   return (
     <div className=" bg-gradient-to-r from-pink-500 via-purple-400 to-light-blue-400 rounded-2xl">
-      <div className="p-20">
+      <div className=" p-0 md:p-20">
         <h2 className="text-3xl text-white my-10 text-center ">Please login</h2>
 
         <form

@@ -14,7 +14,7 @@ const Category = ({ category }) => {
           <p>{description.slice(0, 150)}</p>
           <div className="card-actions flex justify-between items-center">
             <div>
-              <Link to={`/views${id}`}>
+              <Link to={`/views/${id}`}>
                 <button className="btn bg-pink-300  hover:bg-pink-300 text-white">
                   {button.text}
                 </button>

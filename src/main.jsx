@@ -19,6 +19,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    loader: () => fetch(`/baby-shower.json`),
     errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
@@ -44,8 +45,12 @@ const router = createBrowserRouter([
         loader: () => fetch(`/public/baby-shower.json`),
       },
       {
-        path: "/views:id",
-        element: <ViewsDetails></ViewsDetails>,
+        path: "/views/:id",
+        element: (
+          <PrivetRoute>
+            <ViewsDetails></ViewsDetails>
+          </PrivetRoute>
+        ),
         loader: () => fetch(`/baby-shower.json`),
       },
       {

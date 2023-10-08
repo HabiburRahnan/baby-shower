@@ -3,7 +3,6 @@ import { useLoaderData } from "react-router-dom";
 
 const Services = () => {
   const servicesItems = useLoaderData();
-  //   const { image, name, price, description, button } = servicesItem;
   return (
     <div>
       <h3 className="text-5xl text-center font-medium text-light-blue-300 m-10">

@@ -4,7 +4,6 @@ import Banner from "../../Header/Banner/Banner.jsx";
 
 const Home = () => {
   const categories = useLoaderData();
-  console.log(categories);
   return (
     <div>
       <Banner></Banner>
