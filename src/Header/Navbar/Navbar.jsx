@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 
 const Navbar = () => {
-  const { user, logOut } = useContext(AuthContext);
+  const { user, logOut, photoURL } = useContext(AuthContext);
+  console.log(user);
   const handleSingOut = () => {
     logOut().then().catch();
   };
@@ -58,11 +59,16 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>
       </div>
+
       <div className="navbar-end">
         {user ? (
-          <button onClick={handleSingOut} className="btn">
-            Sing Out
-          </button>
+          <>
+            <p>{user.email}</p>
+            <img src={photoURL.photoURL} alt="" />
+            <button onClick={handleSingOut} className="btn">
+              Sing Out
+            </button>
+          </>
         ) : (
           <Link to="/Register">
             <button className="btn">Register</button>
