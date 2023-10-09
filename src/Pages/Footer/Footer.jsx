@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer p-10 bg-base-300 rounded text-base-content">
+      <footer className="footer p-10 bg-base-300 rounded text-base-content  ">
         <nav>
           <header className="footer-title text-center">Services</header>
           <div className="grid grid-cols-2 gap-5">

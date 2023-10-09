@@ -1,4 +1,5 @@
 import { Link, useLoaderData, useParams } from "react-router-dom";
+import Gallery from "../Gallery/Gallery";
 
 const ViewsDetails = () => {
   const categories = useLoaderData();
@@ -26,6 +27,7 @@ const ViewsDetails = () => {
           </div>
         </div>
       </div>
+      <Gallery></Gallery>
     </div>
   );
 };
