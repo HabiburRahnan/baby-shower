@@ -23,7 +23,9 @@ const Register = () => {
       setRegisterError(" Password should be at least 6 characters");
       return;
     } else if (!/^(?=.*[A-Z])(?=.*[\W_]).{6,}$/.test(password)) {
-      setRegisterError("your password should have at least one upper case ");
+      setRegisterError(
+        "your password should have at least one upper case and special char"
+      );
       return;
     }
 

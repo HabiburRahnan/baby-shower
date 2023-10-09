@@ -42,7 +42,7 @@ const router = createBrowserRouter([
             <Services></Services>
           </PrivetRoute>
         ),
-        loader: () => fetch(`/public/baby-shower.json`),
+        loader: () => fetch(`/baby-shower.json`),
       },
       {
         path: "/views/:id",

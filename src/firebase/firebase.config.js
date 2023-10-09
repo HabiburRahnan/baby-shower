@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCif-ZzyoJ3o6AF47by4Kcg6OZIzi4S7K8",
-  authDomain: "baby-shower-9786e.firebaseapp.com",
-  projectId: "baby-shower-9786e",
-  storageBucket: "baby-shower-9786e.appspot.com",
-  messagingSenderId: "339492283225",
-  appId: "1:339492283225:web:d091c5f4208752fe3d2248",
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_APPID,
 };
 
 // Initialize Firebase
