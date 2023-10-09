@@ -9,7 +9,7 @@ const PrivetRoute = ({ children }) => {
   console.log(location);
 
   if (loading) {
-    <span className="loading loading-bars loading-lg"></span>;
+    return <span className="loading loading-bars loading-lg"></span>;
   }
   if (user) {
     return children;
